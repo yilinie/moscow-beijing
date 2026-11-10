@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Москва ↔ Пекин | Цифровое присутствие</title>
+<style>
+:root{--bg:#f4f6fa;--ink:#182230;--muted:#64748b;--line:#e3e8ef;--card:#fff;--mos:#176b87;--bei:#b45b37;--accent:#3156a5}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:#142333;color:white;padding:34px max(22px,calc((100% - 1120px)/2)) 28px}
+.kicker{text-transform:uppercase;letter-spacing:.13em;font-size:11px;color:#a9c5d5;font-weight:700}
+h1{font-size:clamp(28px,5vw,46px);line-height:1.08;margin:12px 0}
+header p{color:#d3dee7;max-width:760px;margin:0}
+main{max-width:1120px;margin:26px auto;padding:0 20px 60px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}
+button{font:inherit;cursor:pointer;border:1px solid var(--line);background:white;color:var(--ink);padding:10px 16px;border-radius:999px;font-weight:650}
+button[aria-selected="true"]{background:#172b3c;color:white;border-color:#172b3c}
+.panel{display:none}.panel.active{display:block}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;margin-bottom:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 4px 16px #1c2c3d08}
+.citytag{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+h2{font-size:25px;margin:8px 0 10px}h3{font-size:17px;margin:0 0 12px}
+.lead{font-size:16px;color:#435266;margin:0}
+.metrics{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.metric{background:#f6f8fb;border-radius:13px;padding:14px}
+.metric strong{display:block;font-size:25px;line-height:1.15}
+.metric span{display:block;color:var(--muted);font-size:12px;margin-top:5px}
+.note{font-size:12px;color:var(--muted);margin-top:12px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:16px 0}
+.platforms{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.platform{border:1px solid var(--line);border-radius:13px;padding:13px}
+.platform b{display:block;margin-bottom:4px}.platform small{color:var(--muted)}
+.pill{display:inline-block;font-size:11px;padding:3px 8px;border-radius:99px;background:#edf2f7;margin:5px 4px 0 0;color:#405166}
+.bars{display:grid;gap:12px}.barrow{display:grid;grid-template-columns:125px 1fr;gap:10px;align-items:center;font-size:13px}
+.track{height:11px;border-radius:99px;background:#edf0f4;overflow:hidden}.fill{height:100%;border-radius:99px;background:var(--accent)}
+.topiclist{display:flex;flex-wrap:wrap;gap:8px}.topic{padding:8px 11px;border-radius:10px;background:#f1f4f8;font-size:13px}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.compare .card{padding:17px}.compare h3{margin-bottom:8px}
+.callout{border-left:4px solid var(--accent);padding:12px 15px;background:#f1f5fb;border-radius:0 12px 12px 0;margin-top:14px}
+footer{color:var(--muted);font-size:12px;margin-top:22px;border-top:1px solid var(--line);padding-top:16px}
+@media(max-width:700px){.hero,.grid,.compare{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}.platforms{grid-template-columns:1fr}.barrow{grid-template-columns:100px 1fr}}
+</style>
+</head>
+<body>
+<header>
+ <div class="kicker">Цифровая дипломатия · городские бренды</div>
+ <h1>Москва ↔ Пекин</h1>
+ <p>Как города представлены в социальных сетях друг друга: платформы, аудитории, тематика контента и модели коммуникации.</p>
+</header>
+<main>
+ <nav class="tabs" role="tablist" aria-label="Выбор раздела">
+  <button role="tab" aria-selected="true" data-tab="overview">Сравнение</button>
+  <button role="tab" aria-selected="false" data-tab="moscow">Москва в Китае</button>
+  <button role="tab" aria-selected="false" data-tab="beijing">Пекин в России</button>
+  <button role="tab" aria-selected="false" data-tab="method">Методика и выводы</button>
+ </nav>
+
+ <section id="overview" class="panel active">
+  <div class="hero">
+   <div class="card">
+    <div class="citytag" style="color:var(--mos)">Москва → китайские платформы</div>
+    <h2>Централизованный городской маркетинг</h2>
+    <p class="lead">Официальный бренд Discover Moscow объединяет четыре китайские платформы и собственный туристический портал. Основная задача — превратить интерес к городу в планирование поездки.</p>
+    <div class="topiclist" style="margin-top:15px"><span class="topic">Туризм</span><span class="topic">Городской образ</span><span class="topic">Маршруты</span><span class="topic">Практическая информация</span></div>
+   </div>
+   <div class="card">
+    <div class="citytag" style="color:var(--bei)">Пекин → российские платформы</div>
+    <h2>Распределённая информационная среда</h2>
+    <p class="lead">О городе рассказывают дипломатические и медиаресурсы, туристические каналы и сообщества русскоязычных жителей. Единой официальной городской экосистемы в VK и Telegram не выявлено.</p>
+    <div class="topiclist" style="margin-top:15px"><span class="topic">Китай в целом</span><span class="topic">Туризм</span><span class="topic">Повседневная жизнь</span><span class="topic">Дипломатия</span></div>
+   </div>
+  </div>
+  <div class="grid">
+   <div class="card"><h3>Проверяемые количественные ориентиры</h3>
+    <div class="metrics">
+     <div class="metric"><strong>4</strong><span>официальные китайские платформы Москвы</span></div>
+     <div class="metric"><strong>25 млн+</strong><span>просмотров китайскоязычных материалов Москвы, июнь 2026</span></div>
+     <div class="metric"><strong>564,4 тыс.</strong><span>подписчиков VK «Россия — Китай: главное»</span></div>
+     <div class="metric"><strong>19,3 тыс.</strong><span>участников Telegram-группы Beijing_ru</span></div>
+    </div>
+    <p class="note">Показатели относятся к разным типам ресурсов и не являются прямым сравнением подписчиков официальных городских аккаунтов.</p>
+   </div>
+   <div class="card"><h3>Модель присутствия</h3>
+    <div class="bars">
+     <div class="barrow"><b>Москва</b><div><div class="track"><div class="fill" style="width:100%;background:var(--mos)"></div></div><small>Единый городской бренд · 4 платформы</small></div></div>
+     <div class="barrow"><b>Пекин</b><div><div class="track"><div class="fill" style="width:58%;background:var(--bei)"></div></div><small>Несколько типов независимых и институциональных каналов</small></div></div>
+    </div>
+    <p class="note">Полосы — качественная иллюстрация степени централизации, не статистический индекс.</p>
+   </div>
+  </div>
+  <div class="card"><h3>Главная асимметрия</h3><div class="compare">
+   <div><b style="color:var(--mos)">Москва</b><p>Город сам выступает издателем и продвигает туристический продукт на локальных китайских платформах.</p></div>
+   <div><b style="color:var(--bei)">Пекин</b><p>В российском сегменте город чаще виден через более широкие каналы о Китае и пользовательские сообщества.</p></div>
+  </div></div>
+ </section>
+
+ <section id="moscow" class="panel">
+  <div class="card" style="margin-bottom:16px"><div class="citytag" style="color:var(--mos)">Москва в Китае</div><h2>Discover Moscow: экосистема из четырёх платформ</h2><p class="lead">Позиционирование — современный, удобный и привлекательный для самостоятельного путешествия мегаполис.</p></div>
+  <div class="grid">
+   <div class="card"><h3>Платформы и их роли</h3><div class="platforms">
+    <div class="platform"><b>WeChat</b><small>Подробные инструкции, статьи, практическая информация. Ориентир публикаций: 8–12 в месяц (исследование начала 2025 г.).</small><br><span class="pill">Информирование</span></div>
+    <div class="platform"><b>Weibo</b><small>Новости города, события, достопримечательности и поддержание узнаваемости.</small><br><span class="pill">Охват и новости</span></div>
+    <div class="platform"><b>Douyin</b><small>Короткие видео о городской среде, архитектуре, культуре и событиях.</small><br><span class="pill">Видеоформат</span></div>
+    <div class="platform"><b>Xiaohongshu / RED</b><small>Визуальные рекомендации, фотолокации, гастрономия и опыт путешественников.</small><br><span class="pill">Вдохновение</span></div>
+   </div></div>
+   <div class="card"><h3>Темы контента</h3><div class="topiclist">
+    <span class="topic">Достопримечательности</span><span class="topic">Гастрономия</span><span class="topic">Музеи</span><span class="topic">Маршруты</span><span class="topic">Транспорт</span><span class="topic">Проживание</span><span class="topic">Фестивали</span><span class="topic">Городской лайфстайл</span>
+   </div><div class="callout"><b>Коммуникационная логика</b><br>Заинтересовать → дать полезную информацию → помочь спланировать поездку → конвертировать интерес в туристический визит.</div></div>
+  </div>
+  <div class="card"><h3>Аудитория</h3><div class="compare">
+   <div><b>Основное ядро</b><p>Самостоятельные китайские туристы; значимая возрастная группа — 18–35 лет.</p></div>
+   <div><b>Дополнительные сегменты</b><p>Гастрономические туристы, деловые путешественники, студенты, любители культуры и городских впечатлений.</p></div>
+  </div><p class="note">В 2025 году Москву посетили около 470 тыс. туристов из Китая; 84% китайских туристов выбирали самостоятельные поездки (данные, приведённые московским туристическим ведомством).</p></div>
+ </section>
+
+ <section id="beijing" class="panel">
+  <div class="card" style="margin-bottom:16px"><div class="citytag" style="color:var(--bei)">Пекин в России</div><h2>Несколько каналов — разные функции и аудитории</h2><p class="lead">В российском цифровом пространстве Пекин представлен не единой городской кампанией, а сочетанием официальных, медийных и пользовательских ресурсов.</p></div>
+  <div class="grid">
+   <div class="card"><h3>Ключевые ресурсы</h3><div class="platforms">
+    <div class="platform"><b>Посольство КНР в РФ · Telegram</b><strong>≈8,6 тыс.</strong><small>Дипломатия, культура, экономика, двусторонние отношения.</small></div>
+    <div class="platform"><b>«Россия — Китай: главное» · VK</b><strong>≈564,4 тыс.</strong><small>Медиапроект о Китае в целом; не отдельный аккаунт Пекина.</small></div>
+    <div class="platform"><b>«Туристам про Пекин» · Telegram</b><strong>≈7,82 тыс.</strong><small>Практические туристические советы, маршруты и достопримечательности.</small></div>
+    <div class="platform"><b>Beijing_ru · Telegram</b><strong>≈19,3 тыс.</strong><small>Сообщество русскоязычных жителей, туристов и экспатов.</small></div>
+   </div></div>
+   <div class="card"><h3>Темы и функции</h3><div class="topiclist">
+    <span class="topic">Российско-китайские отношения</span><span class="topic">Новости КНР</span><span class="topic">Туризм</span><span class="topic">Быт и адаптация</span><span class="topic">Бизнес</span><span class="topic">Образование</span><span class="topic">Городские советы</span>
+   </div><div class="callout"><b>Коммуникационная логика</b><br>Информировать о Китае → поддерживать интерес к стране → помогать туристам и русскоязычным жителям решать практические задачи.</div></div>
+  </div>
+  <div class="card"><h3>Аудитория</h3><div class="compare">
+   <div><b>Широкая аудитория</b><p>Россияне, интересующиеся политикой, экономикой, культурой и отношениями России и Китая.</p></div>
+   <div><b>Специализированная аудитория</b><p>Самостоятельные туристы, студенты, предприниматели, экспаты и русскоязычные жители Пекина.</p></div>
+  </div><p class="note">Официальный русскоязычный портал правительства Пекина существует, однако сопоставимая официальная городская сеть VK/Telegram в ходе анализа не подтверждена.</p></div>
+ </section>
+
+ <section id="method" class="panel">
+  <div class="card"><h2>Как читать эти данные</h2><p class="lead">Сравнение качественное и количественное, но не все показатели симметричны: открытые счётчики официальных аккаунтов Москвы в китайских приложениях и официального аккаунта администрации Пекина в российских сетях не удалось подтвердить.</p>
+   <h3 style="margin-top:22px">Ограничения</h3>
+   <ul>
+    <li>25 млн+ — совокупные просмотры китайскоязычных материалов, а не подписчики.</li>
+    <li>564,4 тыс. — аудитория медиапроекта о Китае в целом, а не аудитория Пекина.</li>
+    <li>19,3 тыс. — участники дискуссионной группы, не подписчики официального канала.</li>
+    <li>Показатели разных сервисов могут иметь разные даты обновления и методики подсчёта.</li>
+   </ul>
+   <h3 style="margin-top:22px">Итоговые выводы</h3>
+   <ol>
+    <li><b>Москва:</b> более централизованная и ориентированная на туристическую конверсию модель.</li>
+    <li><b>Пекин:</b> более фрагментированное присутствие в российском сегменте, где преобладают национальные медиа и сообщества.</li>
+    <li><b>Потенциал:</b> Пекину может быть полезна отдельная русскоязычная городская коммуникационная стратегия в VK и Telegram.</li>
+   </ol>
+  </div>
+  <footer>Подготовлено на основе открытых материалов и статистики, приведённых в аналитическом обзоре. Срез: ноябрь 2026 года. Количественные показатели следует трактовать с учётом указанных дат и ограничений.</footer>
+ </section>
+</main>
+<script>
+const tabs=[...document.querySelectorAll('[data-tab]')];
+const panels=[...document.querySelectorAll('.panel')];
+tabs.forEach(btn=>btn.addEventListener('click',()=>{
+ tabs.forEach(b=>b.setAttribute('aria-selected',String(b===btn)));
+ panels.forEach(p=>p.classList.toggle('active',p.id===btn.dataset.tab));
+}));
+</script>
+</body>
+</html>
